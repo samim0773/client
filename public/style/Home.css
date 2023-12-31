@@ -1,0 +1,84 @@
+/* -------- welcome-msg ----- */
+.welcome-msg {
+  background: #3dcfe1;
+  padding: 30px;
+}
+.sch-name {
+  text-transform: uppercase;
+}
+.welcome-msg .container h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.welcome-msg .container p {
+  text-align: justify;
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 375px) {
+  .sch-heading {
+    font-size: 0.75rem !important;
+  }
+
+  .container p {
+    font-size: 0.5rem;
+    padding: 10px !important;
+  }
+}
+
+/* --------- Vision-mission-notity ------ */
+.vision-mission-notity {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+
+.vision-mission {
+  width: 49%;
+  /* border: 4px dotted green; */
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 3px 6px 0px rgba(0, 0, 0, 0.23);
+}
+/* .vision {
+  border: 2px solid blue;
+} */
+/* .mission {
+  margin-top: 10px;
+  border: 1px solid gold;
+} */
+.notify {
+  width: 49%;
+  /* border: 4px dotted pink; */
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 3px 6px 0px rgba(0, 0, 0, 0.23);
+}
+.vision p,
+.mission p {
+  /* background-color: #eef0e5; */
+  text-align: justify;
+}
+.vision h3,
+.mission h3,
+.notify h3 {
+  text-align: center;
+  color: #3dcfe1;
+  text-decoration: underline;
+}
+/* Responsive Design */
+@media (max-width: 375px) {
+  .vision-mission-notity {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .vision-mission {
+    width: 100%;
+  }
+  .notify {
+    margin-top: 10px;
+    width: 100%;
+  }
+}

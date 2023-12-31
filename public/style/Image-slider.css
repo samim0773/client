@@ -1,0 +1,16 @@
+img {
+  width: 100%;
+}
+@media (max-width: 375px) {
+  /* Adjust the height and width for mobile devices */
+  .img-sli {
+    height: 200px; /* Set your desired height */
+    overflow: hidden;
+  }
+  img {
+    max-height: 100%;
+    width: 100%;
+    display: block; /* Remove extra space beneath the image */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+}
