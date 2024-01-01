@@ -56,10 +56,32 @@ function Home() {
         </div>
       </div>
       <div className="principal">
-        <div className="principal-img">
-          <img src="" alt="principal image" />
+        <div className="container principal-container">
+          <div className="principal-img">
+            <div className="img-outer">
+              <div className="img-inner">
+                <img src="../../public/teachers/teach2.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <di className="principal-about">
+            <h3>Md Samim Aktar</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+              blanditiis labore fugit? Consequatur accusantium explicabo iusto
+              minima eum, ea rerum commodi velit soluta fuga. At, quo voluptate
+              incidunt eum facere, quos voluptas explicabo deserunt voluptatibus
+              veritatis possimus excepturi fugit? Aliquam officiis ab sit fugiat
+              quibusdam iste odio sequi cupiditate sint corporis, nam quaerat?
+              Explicabo dolorum ex ducimus mollitia totam quisquam aliquam,
+              expedita modi ipsum nemo sint est facilis ullam iusto laudantium
+              iure unde sunt! Ipsum voluptas mollitia, repudiandae cupiditate
+              dicta et officiis nulla aut eos accusantium reprehenderit
+              doloribus quo quisquam laborum sint possimus harum aliquid,
+              facilis reiciendis nisi totam. Aliquam?
+            </p>
+          </di>
         </div>
-        <di className="principal-about"></di>
       </div>
     </>
   );
