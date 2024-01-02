@@ -86,7 +86,7 @@
 
 /* --------- principal ------ */
 .principal {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 15px 0;
   background: #3dcfe1;
 }
@@ -96,7 +96,7 @@
   justify-content: space-between;
 }
 .principal-img {
-  border: 1px solid greenyellow;
+  /* border: 1px solid greenyellow; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -125,7 +125,7 @@
   margin: 0 auto; /* Center the image horizontally */
 }
 .principal-about {
-  border: 1px solid darkgoldenrod;
+  /* border: 1px solid darkgoldenrod; */
 }
 .principal-img {
   width: 30%;
@@ -134,4 +134,5 @@
   width: 70%;
   margin: 20px 0;
   text-align: justify;
+  color: #ffffff;
 }

@@ -3,6 +3,7 @@ import Button from "react-bootstrap/Button";
 import ImageSlider from "./Image-slider";
 import Navigation from "./Navigation";
 import VisionMission from "./Vision-mission";
+import TeacherCard from "./Teacher-Card";
 
 function Home() {
   let schoolName = "Jalalpur High Madrasha (H.S)";
@@ -60,7 +61,7 @@ function Home() {
           <div className="principal-img">
             <div className="img-outer">
               <div className="img-inner">
-                <img src="../../public/teachers/teach2.jpg" alt="" />
+                <img src="../../public/teachers/teach3.jpg" alt="" />
               </div>
             </div>
           </div>
@@ -81,6 +82,11 @@ function Home() {
               facilis reiciendis nisi totam. Aliquam?
             </p>
           </di>
+        </div>
+      </div>
+      <div className="teacher-card">
+        <div>
+          <TeacherCard />
         </div>
       </div>
     </>
