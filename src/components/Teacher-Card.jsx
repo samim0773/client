@@ -37,11 +37,11 @@ const data = [
 ];
 function TeacherCard() {
   var settings = {
-    dots: true,
-    infinite: false,
+    dots: false,
+    infinite: true,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 5,
+    slidesToScroll: 2,
     initialSlide: 0,
     responsive: [
       {
@@ -64,7 +64,7 @@ function TeacherCard() {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
@@ -72,8 +72,8 @@ function TeacherCard() {
   };
 
   return (
-    <div>
-      <div className="container">
+    <div className="tech-card-container">
+      <div className="container kkk">
         <Slider {...settings}>
           {data.map((data, index) => (
             <div key={index} className="tech-card">
