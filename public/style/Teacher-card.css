@@ -29,7 +29,7 @@
   color: #a9a9a9 !important;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   /* Adjust the height and width for mobile devices */
   .tech-card {
     background: rgba(128, 128, 128, 0.137) !important;

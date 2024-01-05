@@ -17,7 +17,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   .sch-heading {
     font-size: 0.75rem !important;
   }
@@ -69,7 +69,7 @@
   text-decoration: underline;
 }
 /* Responsive Design */
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   .vision-mission-notity {
     display: flex;
     width: 100%;
@@ -134,7 +134,7 @@
   color: #ffffff;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   /* Adjust the height and width for mobile devices */
   .principal {
     width: 100%;
@@ -154,4 +154,9 @@
   .principal-about p {
     margin-top: -15px;
   }
+}
+
+/* ------------- gallery ------------ */
+.gallery {
+  background: #3dcfe1;
 }

@@ -4,6 +4,7 @@ import ImageSlider from "./Image-slider";
 import Navigation from "./Navigation";
 import VisionMission from "./Vision-mission";
 import TeacherCard from "./Teacher-Card";
+import { Gallery } from "./Gallery";
 
 function Home() {
   let schoolName = "Jalalpur High Madrasha (H.S)";
@@ -94,6 +95,12 @@ function Home() {
       <div className="teacher-card">
         <div>
           <TeacherCard />
+        </div>
+      </div>
+      <div className="gallery">
+        <div className="container">
+          <h3 style={{ textAlign: "center" }}>Gallery</h3>
+          <Gallery />
         </div>
       </div>
     </>

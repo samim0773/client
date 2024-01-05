@@ -1,7 +1,7 @@
 img {
   width: 100%;
 }
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   /* Adjust the height and width for mobile devices */
   .img-sli {
     height: 200px; /* Set your desired height */

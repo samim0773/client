@@ -63,7 +63,7 @@ function TeacherCard() {
         },
       },
       {
-        breakpoint: 375,
+        breakpoint: 480,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
