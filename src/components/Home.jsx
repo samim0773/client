@@ -67,6 +67,7 @@ function Home() {
           </div>
           <di className="principal-about">
             <h3>Md Samim Aktar</h3>
+            <p>Principal</p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
               blanditiis labore fugit? Consequatur accusantium explicabo iusto
@@ -81,6 +82,12 @@ function Home() {
               doloribus quo quisquam laborum sint possimus harum aliquid,
               facilis reiciendis nisi totam. Aliquam?
             </p>
+            <Button
+              variant="outline-info"
+              style={{ margin: "5px 0", background: "#ffffff" }}
+            >
+              Profile...
+            </Button>
           </di>
         </div>
       </div>
