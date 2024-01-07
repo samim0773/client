@@ -4,10 +4,17 @@ import ImageSlider from "./Image-slider";
 import Navigation from "./Navigation";
 import VisionMission from "./Vision-mission";
 import TeacherCard from "./Teacher-Card";
-import { Gallery } from "./Gallery";
 
 function Home() {
   let schoolName = "Jalalpur High Madrasha (H.S)";
+  const galleryImages = [
+    { src: "../../public/images/gallery/img1.jpg", alt: "Flag of India" },
+    { src: "../../public/images/gallery/img2.jpg", alt: "2" },
+    { src: "../../public/images/gallery/img3.jpg", alt: "3" },
+    { src: "../../public/images/gallery/img4.jpg", alt: "4" },
+    { src: "../../public/images/gallery/img5.jpg", alt: "4" },
+    { src: "../../public/images/gallery/img6.jpg", alt: "4" },
+  ];
   return (
     <>
       <Navigation />
@@ -97,10 +104,27 @@ function Home() {
           <TeacherCard />
         </div>
       </div>
-      <div className="gallery">
-        <div className="container">
-          <h3 style={{ textAlign: "center" }}>Gallery</h3>
-          <Gallery />
+      <div className="gallery-body">
+        <div className="container gallery-container">
+          <div className="gallery-heading">
+            <h3>Gallery</h3>
+          </div>
+          <div className="gallery-image">
+            {galleryImages.map((image, index) => (
+              <div key={index} className="images">
+                <img src={image.src} alt={image.alt} />
+              </div>
+            ))}
+          </div>
+          <div className="gallery-btn">
+            <Button
+              className="btn"
+              variant="outline-info"
+              style={{ margin: "5px 0", background: "#ffffff" }}
+            >
+              More...
+            </Button>
+          </div>
         </div>
       </div>
     </>
