@@ -4,6 +4,7 @@ import ImageSlider from "./Image-slider";
 import Navigation from "./Navigation";
 import VisionMission from "./Vision-mission";
 import TeacherCard from "./Teacher-Card";
+import Contact from "./Contact";
 
 function Home() {
   let schoolName = "Jalalpur High Madrasha (H.S)";
@@ -125,6 +126,11 @@ function Home() {
               More...
             </Button>
           </div>
+        </div>
+      </div>
+      <div className="contact-body">
+        <div className="container">
+          <Contact />
         </div>
       </div>
     </>
