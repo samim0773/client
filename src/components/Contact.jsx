@@ -18,60 +18,65 @@ function Contact() {
 
   return (
     <>
-      <div className="contact-heading">
-        <h3>CONTACT US</h3>
-      </div>
-      <div className="contact-body">
-        <div className="contact-address">
-          <p> Jalalpur High Madrasah(H.S)</p>
-          <p>Jalalpur H. Jalalpur Chanchal</p>
-          <p>West Bengal, 732123</p>
-          <p>Phone No : +911234567898</p>
-          <p>E-mail : jhm@gmail.com</p>
-          <p>Website : www.jhm.in</p>
+      <div className="contact">
+        <div className="contact-heading">
+          <h3>CONTACT US</h3>
         </div>
-        <div className="contact-form">
-          <form onSubmit={handleSubmit}>
-            <div className="input-box">
-              <input
-                type="text"
-                placeholder="Enter your full name"
-                value={fullName}
-                onChange={(e) => setFullName(e.target.value)}
-                required
-              />
-            </div>
+        <div className="contact-body">
+          <div className="contact-address">
+            <p> Jalalpur High Madrasah(H.S)</p>
+            <p>Jalalpur H. Jalalpur Chanchal</p>
+            <p>West Bengal, 732123</p>
+            <p>Phone No : +911234567898</p>
+            <p>E-mail : jhm@gmail.com</p>
+            <p>Website : www.jhm.in</p>
+          </div>
+          <div className="contact-form">
+            <form onSubmit={handleSubmit}>
+              <div className="input-box">
+                <input
+                  type="text"
+                  placeholder="Enter your full name"
+                  value={fullName}
+                  onChange={(e) => setFullName(e.target.value)}
+                  required
+                />
+              </div>
 
-            <div className="input-box">
-              <input
-                type="email"
-                placeholder="Enter valid email address"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-            </div>
+              <div className="input-box">
+                <input
+                  type="email"
+                  placeholder="Enter valid email address"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+              </div>
 
-            <div className="input-box">
-              <textarea
-                placeholder="Enter your message"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                required
-              ></textarea>
-            </div>
+              <div className="input-box">
+                <textarea
+                  placeholder="Enter your message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  required
+                ></textarea>
+              </div>
 
-            {/* <button className="form-sub-btn" type="submit">
+              {/* <button className="form-sub-btn" type="submit">
               Submit
             </button> */}
+            <div className="input-box">
             <Button
-              variant="outline-success"
-              className="form-sub-btn"
-              type="submit"
-            >
-              Submit
-            </Button>
-          </form>
+                variant="outline-success"
+                className="form-sub-btn"
+                type="submit"
+              >
+                Submit
+              </Button>
+            </div>
+              
+            </form>
+          </div>
         </div>
       </div>
     </>
