@@ -5,6 +5,7 @@ import Navigation from "./Navigation";
 import VisionMission from "./Vision-mission";
 import TeacherCard from "./Teacher-Card";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 function Home() {
   let schoolName = "Jalalpur High Madrasha (H.S)";
@@ -131,6 +132,16 @@ function Home() {
       <div className="contact-body">
         <div className="container">
           <Contact />
+        </div>
+      </div>
+      <div className="footer">
+        <div className="footer-body">
+          <div className="container">
+            <Footer />
+          </div>
+        </div>
+        <div className="footer-last">
+          <p>Made by Samim Aktar</p>
         </div>
       </div>
     </>
