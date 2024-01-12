@@ -65,16 +65,15 @@ function Contact() {
               {/* <button className="form-sub-btn" type="submit">
               Submit
             </button> */}
-            <div className="input-box">
-            <Button
-                variant="outline-success"
-                className="form-sub-btn"
-                type="submit"
-              >
-                Submit
-              </Button>
-            </div>
-              
+              <div className="input-box">
+                <Button
+                  variant="outline-success"
+                  className="form-sub-btn"
+                  type="submit"
+                >
+                  Submit
+                </Button>
+              </div>
             </form>
           </div>
         </div>

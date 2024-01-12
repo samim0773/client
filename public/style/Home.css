@@ -215,3 +215,20 @@
     margin: 0 auto; /* Center the image horizontally */
   }
 }
+/* -- contact-body-- */
+
+.contact-body {
+  /* background-color: aquamarine; */
+}
+
+/* ------------- Footer ------------- */
+.footer-body {
+  background-color: #3dcfe1;
+}
+.footer-last {
+  background-color: #3498db;
+}
+.footer-last p {
+  text-align: center;
+  margin: 0 0;
+}

@@ -1,7 +1,7 @@
 import "../../public/style/Home.css";
 import Button from "react-bootstrap/Button";
 import ImageSlider from "./Image-slider";
-import Navigation from "./Navigation";
+// import Navigation from "./Navigation";
 import VisionMission from "./Vision-mission";
 import TeacherCard from "./Teacher-Card";
 import Contact from "./Contact";
@@ -19,7 +19,7 @@ function Home() {
   ];
   return (
     <>
-      <Navigation />
+      {/* <Navigation /> */}
       <ImageSlider />
       <div className="welcome-msg">
         <div className="container">
@@ -134,15 +134,17 @@ function Home() {
           <Contact />
         </div>
       </div>
-      <div className="footer">
-        <div className="footer-body">
-          <div className="container">
-            <Footer />
-          </div>
+      {/* <div className="footer-body">
+        <div className="container">
+          <Footer />
         </div>
-        <div className="footer-last">
-          <p>Made by Samim Aktar</p>
-        </div>
+      </div> */}
+      <div className="footer-last">
+        <a href="#">
+          <p style={{ color: "#fff", textDecoration: "none" }}>
+            Made by Samim Aktar
+          </p>
+        </a>
       </div>
     </>
   );

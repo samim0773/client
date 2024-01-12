@@ -12,29 +12,49 @@ function Footer() {
             <div className="footer-about">
               <h5>About</h5>
               <ul>
-                <li>About School</li>
-                <li>About Principal</li>
-                <li>About </li>
-                <li>About School</li>
+                <li>
+                  <a href="#">About School</a>
+                </li>
+                <li>
+                  <a href="#">About Principal</a>
+                </li>
+                <li>
+                  <a href="#">About </a>
+                </li>
+                <li>
+                  <a href="#">About School</a>
+                </li>
               </ul>
             </div>
             <div className="footer-academics">
               <h5>Academics</h5>
               <ul>
-                <li>Calender</li>
-                <li>Result</li>
-                <li>Syllabus</li>
-                <li>Timetable</li>
-                <li>Admission Fee</li>
+                <li>
+                  <a href="#">Calender</a>
+                </li>
+                <li>
+                  <a href="#">Result</a>
+                </li>
+                <li>
+                  <a href="#">Syllabus</a>
+                </li>
+                <li>
+                  <a href="#">Timetable</a>
+                </li>
+                <li>
+                  <a href="#">Admission Fee</a>
+                </li>
               </ul>
             </div>
             <div className="footer-teacher">
               <h5>Teacher</h5>
               <ul>
-                <li>Teacher</li>
+                <li>
+                  <a href="#">Teacher</a>
+                </li>
               </ul>
             </div>
-            <div className="contact">
+            <div className="footer-contact">
               <h5>Contact</h5>
               <ul>
                 <li>Jalalpur High Madrasah(H.S)</li>
@@ -44,9 +64,15 @@ function Footer() {
               </ul>
               <div className="social-media-link">
                 <ul>
-                  <li>facebook</li>
-                  <li>Youtube</li>
-                  <li>Linkend</li>
+                  <li>
+                    <a href="#">facebook</a>
+                  </li>
+                  <li>
+                    <a href="#">Youtube</a>
+                  </li>
+                  <li>
+                    <a href="#">Linkend</a>{" "}
+                  </li>
                 </ul>
               </div>
             </div>
