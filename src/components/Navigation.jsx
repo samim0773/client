@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Button from "react-bootstrap/Button";
+import { LinkContainer } from "react-router-bootstrap";
 import "./Navigation.css";
 
 function Navigation() {
@@ -18,15 +19,25 @@ function Navigation() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto" style={{ margin: "auto" }}>
-            <Nav.Link href="#features">Home</Nav.Link>
-            <Nav.Link href="#pricing">About</Nav.Link>
+            <LinkContainer to="">
+              <Nav.Link to="">Home</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/about">
+              <Nav.Link>About</Nav.Link>
+            </LinkContainer>
             <NavDropdown title="Academics" id="collapsible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">
                 Academic Calender
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Result</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Syllabus</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Timetable</NavDropdown.Item>
+              <LinkContainer to="academics/result">
+                <NavDropdown.Item>Result</NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to="academics/syllabus">
+                <NavDropdown.Item>Result</NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to="academics/timetable">
+                <NavDropdown.Item>Result</NavDropdown.Item>
+              </LinkContainer>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
                 Admission Fee
