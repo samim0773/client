@@ -31,7 +31,7 @@ const images = [
   { src: "../../public/images/gallery/img10.jpg", alt: "10" },
 ];
 
-export function Gallery() {
+function Gallery() {
   const onInit = () => {
     console.log("lightGallery has been initialized");
   };
@@ -60,3 +60,4 @@ export function Gallery() {
     </div>
   );
 }
+export default Gallery;

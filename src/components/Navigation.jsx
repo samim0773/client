@@ -15,7 +15,9 @@ function Navigation() {
       sticky="top"
     >
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <LinkContainer to="">
+          <Navbar.Brand>React-Bootstrap</Navbar.Brand>
+        </LinkContainer>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto" style={{ margin: "auto" }}>
@@ -26,27 +28,33 @@ function Navigation() {
               <Nav.Link>About</Nav.Link>
             </LinkContainer>
             <NavDropdown title="Academics" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">
-                Academic Calender
-              </NavDropdown.Item>
+              <LinkContainer to="academics/academic-calender">
+                <NavDropdown.Item>Academic Calender</NavDropdown.Item>
+              </LinkContainer>
               <LinkContainer to="academics/result">
                 <NavDropdown.Item>Result</NavDropdown.Item>
               </LinkContainer>
               <LinkContainer to="academics/syllabus">
-                <NavDropdown.Item>Result</NavDropdown.Item>
+                <NavDropdown.Item>Syllabus</NavDropdown.Item>
               </LinkContainer>
               <LinkContainer to="academics/timetable">
-                <NavDropdown.Item>Result</NavDropdown.Item>
+                <NavDropdown.Item>Timetable</NavDropdown.Item>
               </LinkContainer>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Admission Fee
-              </NavDropdown.Item>
+              <LinkContainer to="academics/admission-fee">
+                <NavDropdown.Item>Admission Fee</NavDropdown.Item>
+              </LinkContainer>
             </NavDropdown>
 
-            <Nav.Link href="#pricing">Teacher</Nav.Link>
-            <Nav.Link href="#pricing">Gallery</Nav.Link>
-            <Nav.Link href="#pricing">Contact</Nav.Link>
+            <LinkContainer to="teacher">
+              <Nav.Link>Teacher</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="gallery">
+              <Nav.Link>Gallery</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="contact">
+              <Nav.Link>Contact</Nav.Link>
+            </LinkContainer>
           </Nav>
           <Nav>
             <Button variant="outline-success" style={{ margin: "5px 0" }}>

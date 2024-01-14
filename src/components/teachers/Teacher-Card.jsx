@@ -1,4 +1,4 @@
-import "../../public/style/Teacher-card.css";
+import "./Teacher-card.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

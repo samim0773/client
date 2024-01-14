@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import ImageSlider from "./Image-slider";
 // import Navigation from "./Navigation";
 import VisionMission from "./Vision-mission";
-import TeacherCard from "./Teacher-Card";
+import TeacherCard from "./teachers/Teacher-Card";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
