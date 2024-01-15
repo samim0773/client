@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
+import Footer from "./components/footer/Footer";
 
 function Layout() {
   return (

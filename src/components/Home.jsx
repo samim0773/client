@@ -5,7 +5,6 @@ import ImageSlider from "./Image-slider";
 import VisionMission from "./Vision-mission";
 import TeacherCard from "./teachers/Teacher-Card";
 import Contact from "./Contact";
-import Footer from "./Footer";
 
 function Home() {
   let schoolName = "Jalalpur High Madrasha (H.S)";
@@ -133,18 +132,6 @@ function Home() {
         <div className="container">
           <Contact />
         </div>
-      </div>
-      {/* <div className="footer-body">
-        <div className="container">
-          <Footer />
-        </div>
-      </div> */}
-      <div className="footer-last">
-        <a href="#">
-          <p style={{ color: "#fff", textDecoration: "none" }}>
-            Made by Samim Aktar
-          </p>
-        </a>
       </div>
     </>
   );
