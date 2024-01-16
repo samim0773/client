@@ -30,9 +30,7 @@ function Footer() {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink className="footer-link" to="/about">
-                    About{" "}
-                  </NavLink>
+                  <NavLink className="footer-link" to="/about"></NavLink>
                 </li>
                 <li>
                   <NavLink className="footer-link" to="/about">

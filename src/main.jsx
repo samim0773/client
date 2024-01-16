@@ -18,6 +18,7 @@ import AdmissionFFee from "./components/academics/admission-Fee.jsx";
 import Teacher from "./components/teachers/Teachers.jsx";
 import Gallery from "./components/gallery/Gallery.jsx";
 import Contact from "./components/Contact.jsx";
+import ResultForm from "./components/academics/Result-Form.jsx";
 
 import {
   RouterProvider,
@@ -42,6 +43,7 @@ const router = createBrowserRouter(
       <Route path="teacher" element={<Teacher />} />
       <Route path="gallery" element={<Gallery />} />
       <Route path="contact" element={<Contact />} />
+      <Route path="/result/result-form" element={<ResultForm />} />
     </Route>
   )
 );

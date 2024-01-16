@@ -25,7 +25,6 @@ ul {
 }
 .social-media-link {
   /* border: 1px solid red; */
-  padding: 0;
   margin: 0 -50px;
 }
 .social-media-link ul li {
@@ -68,8 +67,27 @@ ul {
 }
 
 @media (max-width: 480px) {
-  .footer-body {
-    width: 100%;
+  .footer-body .container .footer-heading h3 {
+    font-size: 1.2rem;
+  }
+  .footer-body .container .footer-sub {
+    display: flex;
+    justify-content: space-around;
+  }
+  h5 {
+    font-size: 0.7rem;
+  }
+  ul li {
     font-size: 0.5rem;
+  }
+  .social-media-link ul li {
+    text-align: start;
+    padding: 0;
+    display: inline-block;
+    align-items: start;
+    /* background-color: red; */
+  }
+  .social-media-link {
+    margin: 0 0;
   }
 }
