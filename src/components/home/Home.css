@@ -33,7 +33,20 @@
   /* border: 1px solid red; */
   display: flex;
   justify-content: space-around;
-  margin: 30px 0;
+  margin: 30px auto;
+}
+.line {
+  width: 100px;
+  height: 3px;
+  background-color: #3dcfe1;
+  margin: 4px 0;
+}
+.line2{
+  width: 150px;
+}
+.vision-mission-para{
+  margin-top: 20px;
+  /* border: 1px  solid saddlebrown ; */
 }
 
 .vision-mission {
@@ -81,6 +94,10 @@
   .notify {
     margin-top: 10px;
     width: 100%;
+  }
+  .vision-mission-para{
+    margin-top: 4px;
+    /* border: 1px  solid saddlebrown ; */
   }
 }
 

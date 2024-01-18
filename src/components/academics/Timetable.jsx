@@ -70,7 +70,7 @@ function TimeTable() {
   };
 
   return (
-    <div className="container">
+    <div className="container result-body">
       <Accordion>
         {classes.map((classInfo, index) => (
           <Accordion.Item key={index} eventKey={index.toString()}>
@@ -82,6 +82,7 @@ function TimeTable() {
                     <div className="section-title">
                       <h6>{`Section-${section}`}</h6>
                     </div>
+                    <div className="result-btn">
                     <Button
                       className="btn"
                       variant="light"
@@ -92,6 +93,8 @@ function TimeTable() {
                     >
                       Download
                     </Button>
+                    </div>
+                    
                   </div>
                 ))}
               </div>

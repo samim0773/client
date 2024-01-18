@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 
-import "../../public/style/Image-slider.css";
+import "./Image-slider.css";
 
 function ImageSlider() {
   const [index, setIndex] = useState(0);

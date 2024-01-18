@@ -11,7 +11,7 @@ function Navigation() {
     <Navbar
       collapseOnSelect
       expand="lg"
-      className="bg-body-tertiary"
+      className="bg-body-tertiary navbar"
       sticky="top"
     >
       <Container>
@@ -27,6 +27,17 @@ function Navigation() {
             <LinkContainer to="/about">
               <Nav.Link>About</Nav.Link>
             </LinkContainer>
+            <NavDropdown title="About" id="collapsible-nav-dropdown">
+              <LinkContainer to="about/institute">
+                <NavDropdown.Item>About Institute</NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to="about/management">
+                <NavDropdown.Item>Management</NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to="about/vision-mission">
+                <NavDropdown.Item>Vision-Mission</NavDropdown.Item>
+              </LinkContainer>
+            </NavDropdown>
             <NavDropdown title="Academics" id="collapsible-nav-dropdown">
               <LinkContainer to="academics/academic-calender">
                 <NavDropdown.Item>Academic Calender</NavDropdown.Item>
@@ -45,7 +56,6 @@ function Navigation() {
                 <NavDropdown.Item>Admission Fee</NavDropdown.Item>
               </LinkContainer>
             </NavDropdown>
-
             <LinkContainer to="teacher">
               <Nav.Link>Teacher</Nav.Link>
             </LinkContainer>

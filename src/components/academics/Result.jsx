@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Result() {
   return (
     <>
-      <div className="container">
+      <div className="result-container">
         <div className="result-body">
           <div className="result-link">
             <ul>

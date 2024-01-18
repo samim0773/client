@@ -1,10 +1,8 @@
-import "../../public/style/Home.css";
+import "./Home.css";
 import Button from "react-bootstrap/Button";
-import ImageSlider from "./Image-slider";
-// import Navigation from "./Navigation";
-import VisionMission from "./Vision-mission";
-import TeacherCard from "./teachers/Teacher-Card";
-import Contact from "./Contact";
+import ImageSlider from "../carousel/Image-slider";
+import TeacherCard from "../teachers/Teacher-Card";
+import Contact from "../contact/Contact";
 
 function Home() {
   let schoolName = "Jalalpur High Madrasha (H.S)";
@@ -18,7 +16,6 @@ function Home() {
   ];
   return (
     <>
-      {/* <Navigation /> */}
       <ImageSlider />
       <div className="welcome-msg">
         <div className="container">
@@ -51,12 +48,32 @@ function Home() {
       </div>
       <div className="vision-mission-notity container">
         <div className="vision-mission">
-          <VisionMission />
+          <div className="vision-mission-header">
+            <h3>Why Join JHM?</h3>
+            <div className="line line1"></div>
+            <div className="line line2"></div>
+          </div>
+          <div className="vision-mission-para">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+              impedit, nostrum cupiditate laudantium molestias, labore quibusdam
+              doloribus consequuntur dicta inventore exercitationem veritatis
+              alias voluptatibus. Beatae quos numquam ipsum eius cumque fuga
+              aspernatur natus? Autem voluptatum exercitationem adipisci
+              delectus quos dolore.
+            </p>
+          </div>
         </div>
         <div className="notify">
           <h3>Notification</h3>
           <div className="noti-link">
             <ul>
+              <li>new admision</li>
+              <li>new admision</li>
+              <li>new admision</li>
+              <li>new admision</li>
+              <li>new admision</li>
+              <li>new admision</li>
               <li>new admision</li>
               <li>new admision</li>
               <li>new admision</li>
