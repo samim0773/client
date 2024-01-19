@@ -36,27 +36,29 @@ function Gallery() {
     console.log("lightGallery has been initialized");
   };
   return (
-    <div className="App">
-      <LightGallery
-        onInit={onInit}
-        speed={500}
-        plugins={[
-          lgThumbnail,
-          lgZoom,
-          lgAutoplay,
-          lgFullscreen,
-          lgRotate,
-          lgShare,
-        ]}
-      >
-        {images.map((image, index) => {
-          return (
-            <a href={image.src} key={index}>
-              <img className="gallery-img" alt={image.alt} src={image.src} />
-            </a>
-          );
-        })}
-      </LightGallery>
+    <div className="container">
+      <div className="App">
+        <LightGallery
+          onInit={onInit}
+          speed={500}
+          plugins={[
+            lgThumbnail,
+            lgZoom,
+            lgAutoplay,
+            lgFullscreen,
+            lgRotate,
+            lgShare,
+          ]}
+        >
+          {images.map((image, index) => {
+            return (
+              <a href={image.src} key={index}>
+                <img className="gallery-img" alt={image.alt} src={image.src} />
+              </a>
+            );
+          })}
+        </LightGallery>
+      </div>
     </div>
   );
 }

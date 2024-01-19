@@ -1,3 +1,4 @@
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -5,8 +6,36 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Button from "react-bootstrap/Button";
 import { LinkContainer } from "react-router-bootstrap";
 import "./Navigation.css";
+import Modal from "react-bootstrap/Modal";
+import RegistrationLoginForm from "../login-btn/Registration-Login-Form";
+
+function MyVerticallyCenteredModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Please Login To Continue
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body style={{display:"flex"}}>
+        <div>
+          <RegistrationLoginForm />
+        </div>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
 
 function Navigation() {
+  const [modalShow, setModalShow] = React.useState(false);
   return (
     <Navbar
       collapseOnSelect
@@ -23,9 +52,6 @@ function Navigation() {
           <Nav className="me-auto" style={{ margin: "auto" }}>
             <LinkContainer to="">
               <Nav.Link to="">Home</Nav.Link>
-            </LinkContainer>
-            <LinkContainer to="/about">
-              <Nav.Link>About</Nav.Link>
             </LinkContainer>
             <NavDropdown title="About" id="collapsible-nav-dropdown">
               <LinkContainer to="about/institute">
@@ -67,9 +93,17 @@ function Navigation() {
             </LinkContainer>
           </Nav>
           <Nav>
-            <Button variant="outline-success" style={{ margin: "5px 0" }}>
+            <Button
+              variant="outline-success"
+              style={{ margin: "5px 0" }}
+              onClick={() => setModalShow(true)}
+            >
               Login
             </Button>
+            <MyVerticallyCenteredModal
+              show={modalShow}
+              onHide={() => setModalShow(false)}
+            />
           </Nav>
         </Navbar.Collapse>
       </Container>

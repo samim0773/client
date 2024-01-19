@@ -116,7 +116,7 @@ function Footer() {
         </div>
         <div className="footer-last">
           <NavLink
-            href="https://samim0773.github.io/personal-portfolio/"
+            to="https://samim0773.github.io/personal-portfolio/"
             target="_blank"
             rel="noreferrer"
           >
