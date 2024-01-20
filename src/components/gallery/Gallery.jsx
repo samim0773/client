@@ -19,16 +19,46 @@ import lgShare from "lightgallery/plugins/share";
 import lgRotate from "lightgallery/plugins/rotate";
 
 const images = [
-  { src: "../../public/images/gallery/img1.jpg", alt: "Flag of India" },
-  { src: "../../public/images/gallery/img2.jpg", alt: "2" },
-  { src: "../../public/images/gallery/img3.jpg", alt: "3" },
-  { src: "../../public/images/gallery/img4.jpg", alt: "4" },
-  { src: "../../public/images/gallery/img5.jpg", alt: "5" },
-  { src: "../../public/images/gallery/img6.jpg", alt: "6" },
-  { src: "../../public/images/gallery/img7.jpg", alt: "7" },
-  { src: "../../public/images/gallery/img8.jpg", alt: "8" },
-  { src: "../../public/images/gallery/img9.jpg", alt: "9" },
-  { src: "../../public/images/gallery/img10.jpg", alt: "10" },
+  {
+    src: "https://images.pexels.com/photos/1708912/pexels-photo-1708912.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    alt: "Flag of India",
+  },
+  {
+    src: "https://images.pexels.com/photos/3184468/pexels-photo-3184468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    alt: "2",
+  },
+  {
+    src: "https://images.pexels.com/photos/4019754/pexels-photo-4019754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    alt: "3",
+  },
+  {
+    src: "https://images.pexels.com/photos/1708988/pexels-photo-1708988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    alt: "4",
+  },
+  {
+    src: "https://images.pexels.com/photos/459971/pexels-photo-459971.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    alt: "5",
+  },
+  {
+    src: "https://images.pexels.com/photos/3401403/pexels-photo-3401403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    alt: "6",
+  },
+  {
+    src: "https://images.pexels.com/photos/2406271/pexels-photo-2406271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    alt: "7",
+  },
+  {
+    src: "https://images.pexels.com/photos/5212339/pexels-photo-5212339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    alt: "8",
+  },
+  {
+    src: "https://images.pexels.com/photos/5428155/pexels-photo-5428155.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    alt: "9",
+  },
+  {
+    src: "https://images.pexels.com/photos/5212700/pexels-photo-5212700.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    alt: "10",
+  },
 ];
 
 function Gallery() {

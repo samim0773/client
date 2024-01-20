@@ -7,32 +7,32 @@ import Button from "react-bootstrap/Button";
 const data = [
   {
     name: "Samim",
-    img: "../../public/teachers/principal.jpg",
+    img: "https://images.pexels.com/photos/5212361/pexels-photo-5212361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     subject: "English",
   },
   {
     name: "Aktar",
-    img: "../../public/teachers/teach2.jpg",
+    img: "https://images.pexels.com/photos/5212321/pexels-photo-5212321.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     subject: "English",
   },
   {
     name: "Rohan",
-    img: "../../public/teachers/teach3.jpg",
+    img: "https://images.pexels.com/photos/6326377/pexels-photo-6326377.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     subject: "English",
   },
   {
     name: "Roni",
-    img: "../../public/teachers/principal.jpg",
+    img: "https://images.pexels.com/photos/5415444/pexels-photo-5415444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     subject: "English",
   },
   {
     name: "Sumon",
-    img: "../../public/teachers/teach2.jpg",
+    img: "https://images.pexels.com/photos/6929202/pexels-photo-6929202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     subject: "English",
   },
   {
     name: "Sony",
-    img: "../../public/teachers/teach3.jpg",
+    img: "https://images.pexels.com/photos/5212675/pexels-photo-5212675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     subject: "English",
   },
 ];
