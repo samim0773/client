@@ -1,0 +1,49 @@
+.management-team-container {
+  margin: 10px auto 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #2c3e50;
+  text-align: center;
+}
+
+.management-member {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.mange-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.member-details h3 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.member-details p {
+  color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px)  {
+  .management-member {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mange-img {
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

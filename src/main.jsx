@@ -10,6 +10,8 @@ import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import Layout from "./Layout.jsx";
 import Home from "./components/home/Home.jsx";
 import AboutSchool from "./components/about/About-School.jsx";
+import Management from "./components/about/Management.jsx";
+import VisionMission from "./components/about/Vision-Mission.jsx";
 import AcademicCalender from "./components/academics/Academic-Calender.jsx";
 import Result from "./components/academics/Result.jsx";
 import Syllabus from "./components/academics/Syllabus.jsx";
@@ -31,7 +33,9 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route path="" element={<Home />} />
-      <Route path="about" element={<AboutSchool />} />
+      <Route path="about/institute" element={<AboutSchool />} />
+      <Route path="about/management" element={<Management />} />
+      <Route path="about/vision-mission" element={<VisionMission />} />
       <Route
         path="academics/academic-calender"
         element={<AcademicCalender />}

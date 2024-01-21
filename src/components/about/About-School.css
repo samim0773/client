@@ -1,0 +1,66 @@
+.school-info-container {
+  margin: auto;
+  padding: 20px;
+
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container p {
+  text-align: justify;
+}
+
+h1 {
+  color: #2c3e50;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.slogan {
+  color: #2980b9;
+  font-size: 16px;
+}
+
+.school-details {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.key-info {
+  margin-top: 20px;
+}
+
+.info-item {
+  margin-bottom: 10px;
+}
+
+.info-item span {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #555;
+}
+@media (max-width: 480px)  {
+  .container p {
+    text-align: justify;
+    font-size: 1rem;
+    padding: 10px !important;
+}
+  h1 {
+    /* font-size: 24px; */
+  }
+
+  .slogan {
+    font-size: 14px;
+  }
+
+  .school-details,
+  .key-info {
+    font-size: 14px;
+  }
+}

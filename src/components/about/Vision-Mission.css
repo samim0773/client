@@ -1,0 +1,39 @@
+.vision-mission-container {
+  margin: 10px auto 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #2c3e50;
+}
+
+.vision-section ul,
+.mission-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.vision-section li,
+.mission-section li {
+  color: #555;
+  line-height: 1.6;
+}
+
+.vision-section li::before {
+  content: "\2022"; /* Bullet point character */
+  color: #3498db;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.mission-section li::before {
+  content: "\2022"; /* Bullet point character */
+  color: #e74c3c;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
