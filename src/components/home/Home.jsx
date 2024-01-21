@@ -5,7 +5,7 @@ import TeacherCard from "../teachers/Teacher-Card";
 import Contact from "../contact/Contact";
 
 function Home() {
-  let schoolName = "Jalalpur High Madrasha (H.S)";
+  let schoolName = "ABC institute of technology";
   const galleryImages = [
     { src: "../../public/images/gallery/img1.jpg", alt: "Flag of India" },
     { src: "../../public/images/gallery/img2.jpg", alt: "2" },

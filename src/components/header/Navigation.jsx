@@ -22,7 +22,7 @@ function MyVerticallyCenteredModal(props) {
           Please Login To Continue
         </Modal.Title>
       </Modal.Header>
-      <Modal.Body style={{display:"flex"}}>
+      <Modal.Body style={{ display: "flex" }}>
         <div>
           <RegistrationLoginForm />
         </div>
@@ -45,7 +45,7 @@ function Navigation() {
     >
       <Container>
         <LinkContainer to="">
-          <Navbar.Brand>React-Bootstrap</Navbar.Brand>
+          <Navbar.Brand>ABC Institute of Technology</Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

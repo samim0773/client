@@ -24,12 +24,12 @@ function Contact() {
         </div>
         <div className="contact-body">
           <div className="contact-address">
-            <p> Jalalpur High Madrasah(H.S)</p>
+            <p> ABC Institute of Technology</p>
             <p>Jalalpur H. Jalalpur Chanchal</p>
             <p>West Bengal, 732123</p>
             <p>Phone No : +911234567898</p>
-            <p>E-mail : jhm@gmail.com</p>
-            <p>Website : www.jhm.in</p>
+            <p>E-mail : abc@gmail.com</p>
+            <p>Website : www.abc.in</p>
           </div>
           <div className="contact-form">
             <form onSubmit={handleSubmit}>

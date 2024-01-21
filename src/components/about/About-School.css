@@ -12,7 +12,7 @@ header {
   margin-bottom: 20px;
 }
 
-.container p {
+.about-para {
   text-align: justify;
 }
 
@@ -45,18 +45,14 @@ h1 {
   margin-right: 10px;
   color: #555;
 }
-@media (max-width: 480px)  {
-  .container p {
+@media (max-width: 480px) {
+  .about-para {
     text-align: justify;
     font-size: 1rem;
     padding: 10px !important;
-}
+  }
   h1 {
     /* font-size: 24px; */
-  }
-
-  .slogan {
-    font-size: 14px;
   }
 
   .school-details,

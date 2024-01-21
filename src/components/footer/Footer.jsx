@@ -13,7 +13,7 @@ function Footer() {
       <div className="footer-body">
         <div className="container">
           <div className="footer-heading">
-            <h3>Jalalpur High Madrasha (H.S)</h3>
+            <h3>ABC Institute of Technology</h3>
           </div>
           <div className="footer-sub">
             <div className="footer-about">
@@ -82,7 +82,7 @@ function Footer() {
             <div className="footer-contact">
               <h5>Contact</h5>
               <ul>
-                <li>Jalalpur High Madrasah(H.S)</li>
+                <li>ABC Institute of Technology</li>
                 <li>Jalalpur H. Jalalpur Chanchal</li>
                 <li>West Bengal, 732123</li>
                 <li>Phone No : +911234567898</li>
