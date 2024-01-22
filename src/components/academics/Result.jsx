@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 function Result() {
   return (
     <>
-      <div className="result-container">
+      <div className="result-container container">
         <div className="result-body">
           <div className="result-link">
             <ul>
               <li>
-                <Link to="/result/result-form">Class V: Unit Text-1</Link>
+                <Link to="/result/result-form">Class V: Unit Test-1</Link>
               </li>
             </ul>
           </div>

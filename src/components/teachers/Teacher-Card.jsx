@@ -13,27 +13,32 @@ const data = [
   {
     name: "Aktar",
     img: "https://images.pexels.com/photos/5212321/pexels-photo-5212321.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    subject: "English",
+    subject: "Bengali",
   },
   {
     name: "Rohan",
     img: "https://images.pexels.com/photos/6326377/pexels-photo-6326377.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    subject: "English",
+    subject: "History",
   },
   {
     name: "Roni",
     img: "https://images.pexels.com/photos/5415444/pexels-photo-5415444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    subject: "English",
+    subject: "Geography",
   },
   {
     name: "Sumon",
     img: "https://images.pexels.com/photos/6929202/pexels-photo-6929202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    subject: "English",
+    subject: "Math",
   },
   {
     name: "Sony",
     img: "https://images.pexels.com/photos/5212675/pexels-photo-5212675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    subject: "English",
+    subject: "Physics",
+  },
+  {
+    name: "Danny",
+    img: "https://images.pexels.com/photos/6929202/pexels-photo-6929202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    subject: "Psychology",
   },
 ];
 function TeacherCard() {

@@ -1,7 +1,10 @@
+import TeacherCard from "./Teacher-Card";
+
 function Teachers() {
   return (
     <>
-      <h2>Teachers component</h2>
+      <TeacherCard/>
+      <TeacherCard/>
     </>
   );
 }
