@@ -65,9 +65,6 @@ function Navigation() {
               </LinkContainer>
             </NavDropdown>
             <NavDropdown title="Academics" id="collapsible-nav-dropdown">
-              <LinkContainer to="academics/academic-calender">
-                <NavDropdown.Item>Academic Calender</NavDropdown.Item>
-              </LinkContainer>
               <LinkContainer to="academics/result">
                 <NavDropdown.Item>Result</NavDropdown.Item>
               </LinkContainer>
@@ -78,8 +75,11 @@ function Navigation() {
                 <NavDropdown.Item>Timetable</NavDropdown.Item>
               </LinkContainer>
               <NavDropdown.Divider />
-              <LinkContainer to="academics/admission-fee">
-                <NavDropdown.Item>Admission Fee</NavDropdown.Item>
+              <LinkContainer to="academics/academic-calender">
+                <NavDropdown.Item>Academic Calender</NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to="academics/new-admission">
+                <NavDropdown.Item> New Admission</NavDropdown.Item>
               </LinkContainer>
             </NavDropdown>
             <LinkContainer to="teacher">

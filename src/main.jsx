@@ -16,7 +16,7 @@ import AcademicCalender from "./components/academics/Academic-Calender.jsx";
 import Result from "./components/academics/Result.jsx";
 import Syllabus from "./components/academics/Syllabus.jsx";
 import Timetable from "./components/academics/Timetable.jsx";
-import AdmissionFFee from "./components/academics/admission-Fee.jsx";
+import NewAdmission from "./components/academics/New-Admission.jsx";
 import Teacher from "./components/teachers/Teachers.jsx";
 import Gallery from "./components/gallery/Gallery.jsx";
 import Contact from "./components/contact/Contact.jsx";
@@ -43,7 +43,7 @@ const router = createBrowserRouter(
       <Route path="academics/result" element={<Result />} />
       <Route path="academics/syllabus" element={<Syllabus />} />
       <Route path="academics/timetable" element={<Timetable />} />
-      <Route path="academics/admission-fee" element={<AdmissionFFee />} />
+      <Route path="academics/new-admission" element={<NewAdmission />} />
       <Route path="teacher" element={<Teacher />} />
       <Route path="gallery" element={<Gallery />} />
       <Route path="contact" element={<Contact />} />

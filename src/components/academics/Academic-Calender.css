@@ -1,0 +1,59 @@
+/* EnhancedAcademicCalendar.css */
+
+.enhanced-academic-calendar-container {
+  margin: 20px auto;
+  padding: 20px;
+  /* border: 1px solid #27ae60; */
+  border-radius: 8px;
+  background-color: #ecf0f1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  /* color: #27ae60; */
+}
+
+p {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.event {
+  font-weight: bold;
+  color: #3498db;
+}
+
+.additional-info {
+  margin-top: 20px;
+}
+
+h3 {
+  /* color: #27ae60; */
+  margin-bottom: 10px;
+}
+
+.download-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #219a52;
+}

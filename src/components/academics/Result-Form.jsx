@@ -2,128 +2,120 @@ import React, { useState } from "react";
 // import "./ResultForm.css"; // Import CSS file for styling
 
 const ResultForm = () => {
-  const initialFormData = {
-    studentId: "",
-    studentRoll: "",
-    studentName: "",
-    studentClass: "",
+  const [formData, setFormData] = useState({
+    studentId: '',
+    roll: ''
+  });
+
+  const [errors, setErrors] = useState({
+    studentId: '',
+    roll: ''
+  });
+
+  const validateStudentId = (value) => {
+    const regex = /^[0-9a-zA-Z]+$/;
+    return regex.test(value);
   };
 
-  const [formData, setFormData] = useState(initialFormData);
-  const [errors, setErrors] = useState({});
-  const [isSubmitDisabled, setIsSubmitDisabled] = useState(true);
-  const [submittedData, setSubmittedData] = useState(null);
+  const validateRoll = (value) => {
+    const regex = /^[0-9]+$/;
+    return regex.test(value);
+  };
+
+  const validateSpecialCharacters = (value) => {
+    const regex = /^[a-zA-Z0-9]+$/;
+    return regex.test(value);
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+
     setFormData({
       ...formData,
-      [name]: value,
+      [name]: value
+    });
+
+    setErrors({
+      ...errors,
+      [name]: ''
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validate form fields
-    const newErrors = {};
-    if (!/^\d+$/.test(formData.studentId.trim())) {
-      newErrors.studentId = "Student ID must be a numeric value";
-    }
-    Object.keys(formData).forEach((key) => {
-      if (!formData[key].trim()) {
-        newErrors[key] = `${key} cannot be empty`;
-      }
-    });
+    // Validate inputs before submission
+    const isStudentIdValid = validateStudentId(formData.studentId);
+    const isRollValid = validateRoll(formData.roll);
 
-    // If there are errors, set them and prevent form submission
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
-    } else {
-      // If validation passes, log the form data as JSON, clear the form, and set submitted data
-      console.log("Form Data:", JSON.stringify(formData));
-      setFormData(initialFormData);
-      setErrors({});
-      setSubmittedData(formData);
+    if (!isStudentIdValid) {
+      setErrors({
+        ...errors,
+        studentId: 'Student ID should contain only numbers and characters.'
+      });
+    }
+
+    if (!isRollValid) {
+      setErrors({
+        ...errors,
+        roll: 'Roll should contain only numbers.'
+      });
+    }
+
+    if (!validateSpecialCharacters(formData.studentId)) {
+      setErrors({
+        ...errors,
+        studentId: 'Special symbols are not allowed in Student ID.'
+      });
+    }
+
+    if (!validateSpecialCharacters(formData.roll)) {
+      setErrors({
+        ...errors,
+        roll: 'Special symbols are not allowed in Roll.'
+      });
+    }
+
+    if (isStudentIdValid && isRollValid) {
+      // Form data is valid, you can proceed with your desired action
+      console.log('Form submitted:', JSON.stringify(formData));
     }
   };
 
-  // Check if the form is valid
-  React.useEffect(() => {
-    const isValid =
-      /^\d+$/.test(formData.studentId.trim()) &&
-      Object.values(formData).every((value) => value.trim() !== "");
-    setIsSubmitDisabled(!isValid);
-  }, [formData]);
+  const isSubmitDisabled = () => {
+    return !validateStudentId(formData.studentId) || !validateRoll(formData.roll) || !validateSpecialCharacters(formData.studentId) || !validateSpecialCharacters(formData.roll);
+  };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="studentId">Student ID:</label>
-          <input
-            type="text"
-            id="studentId"
-            name="studentId"
-            value={formData.studentId}
-            onChange={handleChange}
-            className={errors.studentId ? "error" : ""}
-          />
-          <span className="error-message">{errors.studentId}</span>
-        </div>
+    <form onSubmit={handleSubmit}>
+      <div>
+        <label htmlFor="studentId">Student ID:</label>
+        <input
+          type="text"
+          id="studentId"
+          name="studentId"
+          value={formData.studentId}
+          onChange={handleChange}
+        />
+        <div className="error-message">{errors.studentId}</div>
+      </div>
 
-        <div className="form-group">
-          <label htmlFor="studentRoll">Student Roll:</label>
-          <input
-            type="text"
-            id="studentRoll"
-            name="studentRoll"
-            value={formData.studentRoll}
-            onChange={handleChange}
-            className={errors.studentRoll ? "error" : ""}
-          />
-          <span className="error-message">{errors.studentRoll}</span>
-        </div>
+      <div>
+        <label htmlFor="roll">Roll:</label>
+        <input
+          type="text"
+          id="roll"
+          name="roll"
+          value={formData.roll}
+          onChange={handleChange}
+        />
+        <div className="error-message">{errors.roll}</div>
+      </div>
 
-        <div className="form-group">
-          <label htmlFor="studentName">Student Name:</label>
-          <input
-            type="text"
-            id="studentName"
-            name="studentName"
-            value={formData.studentName}
-            onChange={handleChange}
-            className={errors.studentName ? "error" : ""}
-          />
-          <span className="error-message">{errors.studentName}</span>
-        </div>
-
-        <div className="form-group">
-          <label htmlFor="studentClass">Class:</label>
-          <input
-            type="text"
-            id="studentClass"
-            name="studentClass"
-            value={formData.studentClass}
-            onChange={handleChange}
-            className={errors.studentClass ? "error" : ""}
-          />
-          <span className="error-message">{errors.studentClass}</span>
-        </div>
-
-        <button type="submit" disabled={isSubmitDisabled}>
-          Submit
-        </button>
-      </form>
-
-      {submittedData && (
-        <div>
-          <h2>Submitted Data:</h2>
-          <pre>{JSON.stringify(submittedData, null, 2)}</pre>
-        </div>
-      )}
-    </div>
+      <button type="submit" disabled={isSubmitDisabled()}>
+        Submit
+      </button>
+    </form>
   );
 };
-
 export default ResultForm;
