@@ -47,7 +47,7 @@ const router = createBrowserRouter(
       <Route path="teacher" element={<Teacher />} />
       <Route path="gallery" element={<Gallery />} />
       <Route path="contact" element={<Contact />} />
-      <Route path="result/result-form" element={<ResultForm />} />
+      <Route path="/result/result-form/:selectedItem" element={<ResultForm />} />
     </Route>
   )
 );

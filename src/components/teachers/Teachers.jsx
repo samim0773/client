@@ -4,7 +4,6 @@ function Teachers() {
   return (
     <>
       <TeacherCard/>
-      <TeacherCard/>
     </>
   );
 }

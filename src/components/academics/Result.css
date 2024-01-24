@@ -1,10 +1,46 @@
+.result-heading{
+  text-align: center;
+}
+
 .result-container {
+  /* margin: 20px auto; */
+}
+.result-body {
+  /* border: 1px solid red; */
+}
+.result-link {
+  width: 40%;
+  margin: 10px auto;
+}
+
+
+.result-link ul li {
+  display: block;
   margin: 20px auto;
 }
-.accordion-header {
-  /* display: flex; */
-  align-items: center;
+
+.result-link {
+  display: flex;
   justify-content: center;
-  text-align: center;
-  /* background-color: red; */
+  align-items: center;
 }
+
+.result-link ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center; 
+}
+
+.result-link li {
+  margin: 10px 0;
+}
+
+/* .result-link a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 5px;
+  display: inline-block;
+} */

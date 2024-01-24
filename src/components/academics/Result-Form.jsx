@@ -1,16 +1,26 @@
-import React, { useState } from "react";
-// import "./ResultForm.css"; // Import CSS file for styling
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 const ResultForm = () => {
+  const { selectedItem } = useParams();
   const [formData, setFormData] = useState({
-    studentId: '',
-    roll: ''
+    studentId: selectedItem || "",
+    roll: "",
   });
 
   const [errors, setErrors] = useState({
-    studentId: '',
-    roll: ''
+    studentId: "",
+    roll: "",
   });
+
+  useEffect(() => {
+    if (selectedItem && formData.studentId !== selectedItem) {
+      setFormData((prevFormData) => ({
+        ...prevFormData,
+        studentId: selectedItem,
+      }));
+    }
+  }, [selectedItem, formData.studentId]);
 
   const validateStudentId = (value) => {
     const regex = /^[0-9a-zA-Z]+$/;
@@ -30,60 +40,64 @@ const ResultForm = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    setFormData({
-      ...formData,
-      [name]: value
-    });
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
 
-    setErrors({
-      ...errors,
-      [name]: ''
-    });
+    setErrors((prevErrors) => ({
+      ...prevErrors,
+      [name]: "",
+    }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validate inputs before submission
     const isStudentIdValid = validateStudentId(formData.studentId);
     const isRollValid = validateRoll(formData.roll);
 
     if (!isStudentIdValid) {
       setErrors({
         ...errors,
-        studentId: 'Student ID should contain only numbers and characters.'
+        studentId: "Student ID should contain only numbers and characters.",
       });
     }
 
     if (!isRollValid) {
       setErrors({
         ...errors,
-        roll: 'Roll should contain only numbers.'
+        roll: "Roll should contain only numbers.",
       });
     }
 
     if (!validateSpecialCharacters(formData.studentId)) {
       setErrors({
         ...errors,
-        studentId: 'Special symbols are not allowed in Student ID.'
+        studentId: "Special symbols are not allowed in Student ID.",
       });
     }
 
     if (!validateSpecialCharacters(formData.roll)) {
       setErrors({
         ...errors,
-        roll: 'Special symbols are not allowed in Roll.'
+        roll: "Special symbols are not allowed in Roll.",
       });
     }
 
     if (isStudentIdValid && isRollValid) {
-      // Form data is valid, you can proceed with your desired action
-      console.log('Form submitted:', JSON.stringify(formData));
+      console.log("Form submitted:", JSON.stringify(formData));
+      console.log("Selected Class:", selectedItem);
     }
   };
 
   const isSubmitDisabled = () => {
-    return !validateStudentId(formData.studentId) || !validateRoll(formData.roll) || !validateSpecialCharacters(formData.studentId) || !validateSpecialCharacters(formData.roll);
+    return (
+      !validateStudentId(formData.studentId) ||
+      !validateRoll(formData.roll) ||
+      !validateSpecialCharacters(formData.studentId) ||
+      !validateSpecialCharacters(formData.roll)
+    );
   };
 
   return (
@@ -118,4 +132,5 @@ const ResultForm = () => {
     </form>
   );
 };
+
 export default ResultForm;
