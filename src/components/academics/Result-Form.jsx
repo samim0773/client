@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from "react";
+import "./Result-Form.css";
+import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 const ResultForm = () => {
   const { selectedItem } = useParams();
   const [formData, setFormData] = useState({
-    studentId: selectedItem || "",
+    studentId: "", // Leave studentId empty initially
     roll: "",
+    examType: selectedItem || "", // Set examType using useParams
   });
 
   const [errors, setErrors] = useState({
@@ -14,13 +16,14 @@ const ResultForm = () => {
   });
 
   useEffect(() => {
-    if (selectedItem && formData.studentId !== selectedItem) {
-      setFormData((prevFormData) => ({
-        ...prevFormData,
-        studentId: selectedItem,
-      }));
-    }
-  }, [selectedItem, formData.studentId]);
+    // Assuming you have a JSON variable, replace 'jsonVariable' with your actual JSON variable
+    const jsonVariable = { examType: "yourExamTypeValue" };
+
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      examType: selectedItem || jsonVariable.examType, // Set the examType based on useParams or JSON
+    }));
+  }, [selectedItem]);
 
   const validateStudentId = (value) => {
     const regex = /^[0-9a-zA-Z]+$/;
@@ -101,35 +104,64 @@ const ResultForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="studentId">Student ID:</label>
-        <input
-          type="text"
-          id="studentId"
-          name="studentId"
-          value={formData.studentId}
-          onChange={handleChange}
-        />
-        <div className="error-message">{errors.studentId}</div>
+    <>
+      <div className="result-form-body">
+        <div className="result-form container">
+          <form onSubmit={handleSubmit}>
+            <div className="exam-type-field">
+              <label className="field-label" htmlFor="examType">
+                Exam Type:
+              </label>
+              <input
+                className="input-field"
+                type="text"
+                id="examType"
+                name="examType"
+                value={formData.examType}
+                disabled
+              />
+            </div>
+            <div className="student-id-field">
+              <label className="field-label" htmlFor="studentId">
+                Student ID:
+              </label>
+              <input
+                className="input-field"
+                type="text"
+                id="studentId"
+                name="studentId"
+                value={formData.studentId}
+                onChange={handleChange}
+              />
+              <div className="error-message">{errors.studentId}</div>
+            </div>
+            <div className="roll-field">
+              <label className="field-label" htmlFor="roll">
+                Roll:
+              </label>
+              <input
+                className="input-field"
+                type="text"
+                id="roll"
+                name="roll"
+                value={formData.roll}
+                onChange={handleChange}
+              />
+              <div className="error-message">{errors.roll}</div>
+            </div>
+            <div className="result-sub-btn-outer">
+              <button
+                className="result-sub-btn"
+                type="submit"
+                disabled={isSubmitDisabled()}
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
-
-      <div>
-        <label htmlFor="roll">Roll:</label>
-        <input
-          type="text"
-          id="roll"
-          name="roll"
-          value={formData.roll}
-          onChange={handleChange}
-        />
-        <div className="error-message">{errors.roll}</div>
-      </div>
-
-      <button type="submit" disabled={isSubmitDisabled()}>
-        Submit
-      </button>
-    </form>
+    </>
   );
 };
 

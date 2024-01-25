@@ -91,7 +91,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <di className="principal-about">
+          <div className="principal-about">
             <h3>Md Samim Aktar</h3>
             <p>Principal</p>
             <p>
@@ -114,7 +114,7 @@ function Home() {
             >
               Profile...
             </Button>
-          </di>
+          </div>
         </div>
       </div>
       <div className="teacher-card">
