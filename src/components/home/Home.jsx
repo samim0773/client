@@ -3,16 +3,36 @@ import Button from "react-bootstrap/Button";
 import ImageSlider from "../carousel/Image-slider";
 import TeacherCard from "../teachers/Teacher-Card";
 import Contact from "../contact/Contact";
+import { Link } from "react-router-dom";
+import NewsBoard from "../Notification/NewsBoard";
 
 function Home() {
   let schoolName = "ABC institute of technology";
   const galleryImages = [
-    { src: "../../public/images/gallery/img1.jpg", alt: "Flag of India" },
-    { src: "../../public/images/gallery/img2.jpg", alt: "2" },
-    { src: "../../public/images/gallery/img3.jpg", alt: "3" },
-    { src: "../../public/images/gallery/img4.jpg", alt: "4" },
-    { src: "../../public/images/gallery/img5.jpg", alt: "4" },
-    { src: "../../public/images/gallery/img6.jpg", alt: "4" },
+    {
+      src: "https://images.pexels.com/photos/1708912/pexels-photo-1708912.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      alt: "Flag of India",
+    },
+    {
+      src: "https://images.pexels.com/photos/3184468/pexels-photo-3184468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      alt: "2",
+    },
+    {
+      src: "https://images.pexels.com/photos/4019754/pexels-photo-4019754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      alt: "3",
+    },
+    {
+      src: "https://images.pexels.com/photos/1708988/pexels-photo-1708988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      alt: "4",
+    },
+    {
+      src: "https://images.pexels.com/photos/459971/pexels-photo-459971.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      alt: "5",
+    },
+    {
+      src: "https://images.pexels.com/photos/3401403/pexels-photo-3401403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      alt: "6",
+    },
   ];
   return (
     <>
@@ -49,7 +69,7 @@ function Home() {
       <div className="vision-mission-notity container">
         <div className="vision-mission">
           <div className="vision-mission-header">
-            <h3>Why Join JHM?</h3>
+            <h3>Why Join ABC?</h3>
             <div className="line line1"></div>
             <div className="line line2"></div>
           </div>
@@ -65,20 +85,9 @@ function Home() {
           </div>
         </div>
         <div className="notify">
-          <h3>Notification</h3>
+          <h3>Important Announcement</h3>
           <div className="noti-link">
-            <ul>
-              <li>new admision</li>
-              <li>new admision</li>
-              <li>new admision</li>
-              <li>new admision</li>
-              <li>new admision</li>
-              <li>new admision</li>
-              <li>new admision</li>
-              <li>new admision</li>
-              <li>new admision</li>
-              <li>new admision</li>
-            </ul>
+            <NewsBoard />
           </div>
         </div>
       </div>
@@ -87,7 +96,10 @@ function Home() {
           <div className="principal-img">
             <div className="img-outer">
               <div className="img-inner">
-                <img src="../../public/teachers/teach3.jpg" alt="" />
+                <img className="prin-img"
+                  src="https://images.pexels.com/photos/5415450/pexels-photo-5415450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="principal-img"
+                />
               </div>
             </div>
           </div>
@@ -119,6 +131,7 @@ function Home() {
       </div>
       <div className="teacher-card">
         <div>
+          <h3 className="tech-card-heading">Faculty Members</h3>
           <TeacherCard />
         </div>
       </div>
@@ -140,7 +153,7 @@ function Home() {
               variant="outline-info"
               style={{ margin: "5px 0", background: "#ffffff" }}
             >
-              More...
+              <Link to="/gallery">More..</Link>
             </Button>
           </div>
         </div>

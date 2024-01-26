@@ -1,0 +1,21 @@
+/* NewsBoard.css */
+
+.news-container {
+  overflow: hidden;
+  height: 230px; /* Set the height based on your design */
+}
+
+.news-item {
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+}
+
+.news-item:hover {
+  background-color: #f0f0f0; /* Optional: Highlight on hover */
+  cursor: pointer;
+}

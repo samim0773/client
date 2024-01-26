@@ -1,0 +1,73 @@
+/* SignUpLogin.css */
+.sing-up-body{
+    /* background-color: rgb(50, 14, 235); */
+    /* display: flex; */
+    /* align-content: center; */
+    /* justify-content: center; */
+    /* margin-left: 300px; */
+}
+.sing-up-container {
+  /* max-width: 400px; */
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* background-color: red; */
+}
+
+.sing-up-tabs {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 0 0;
+}
+
+.tab.active {
+  background-color: #fff;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.sing-up-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sing-up-lable {
+  margin-top: 10px;
+}
+
+.sing-up-input,
+.sing-up-select {
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.sing-up-btn {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sing-up-btn:hover {
+  background-color: #45a049;
+}
+
+/* Add more styles as needed */

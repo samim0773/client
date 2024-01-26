@@ -1,3 +1,4 @@
+import './Navigation.css'
 import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -7,7 +8,7 @@ import Button from "react-bootstrap/Button";
 import { LinkContainer } from "react-router-bootstrap";
 import "./Navigation.css";
 import Modal from "react-bootstrap/Modal";
-import RegistrationLoginForm from "../login-btn/Registration-Login-Form";
+import SignUpLogin from "../login-btn/SignUpLogin";
 
 function MyVerticallyCenteredModal(props) {
   return (
@@ -22,9 +23,11 @@ function MyVerticallyCenteredModal(props) {
           Please Login To Continue
         </Modal.Title>
       </Modal.Header>
-      <Modal.Body style={{ display: "flex" }}>
-        <div>
-          <RegistrationLoginForm />
+      <Modal.Body className="d-flex align-items-center">
+        <div className="sing-up-form-outer">
+          <div className="sing-up-form-innter">
+          <SignUpLogin />
+          </div>
         </div>
       </Modal.Body>
       <Modal.Footer>

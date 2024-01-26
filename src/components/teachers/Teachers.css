@@ -1,0 +1,14 @@
+.tech-heading{
+    /* border: 1px solid blue; */
+    margin-top: 20px;
+}
+
+.teacher-dropdown{
+    /* border: 1px solid red; */
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto 10px auto;
+}
